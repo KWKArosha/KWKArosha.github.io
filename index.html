@@ -326,13 +326,41 @@
           </div>
           <h3 class="project-title">Ceylon MediHub</h3>
           <p class="project-desc">A distributed healthcare management system providing a centralized hub for medical records, appointments and e channeling with video calls.</p>
+
+          <!-- Screenshot gallery -->
+          <div class="proj-gallery">
+            <div class="gallery-strip">
+              <button class="gallery-thumb active" data-index="0" aria-label="Screenshot 1">
+                <img src="assets/medihub1.png" alt="MediHub screenshot 1" loading="lazy" />
+              </button>
+              <button class="gallery-thumb" data-index="1" aria-label="Screenshot 2">
+                <img src="assets/medihub2.png" alt="MediHub screenshot 2" loading="lazy" />
+              </button>
+              <button class="gallery-thumb" data-index="2" aria-label="Screenshot 3">
+                <img src="assets/medihub3.png" alt="MediHub screenshot 3" loading="lazy" />
+              </button>
+              <button class="gallery-thumb" data-index="3" aria-label="Screenshot 4">
+                <img src="assets/medihub4.png" alt="MediHub screenshot 4" loading="lazy" />
+              </button>
+            </div>
+            <div class="gallery-preview" id="galleryPreview">
+              <img src="assets/medihub1.png" alt="MediHub preview" id="galleryMainImg" />
+              <button class="gallery-expand" id="galleryExpandBtn" aria-label="View full screen">
+                <span>⤢</span>
+              </button>
+              <div class="gallery-counter mono"><span id="galleryCurrent">1</span> / 4</div>
+            </div>
+          </div>
+
           <div class="project-highlights">
             <div class="highlight-item">
               <span class="mono accent">›</span> Distributed microservices architecture
+            </div>
+            <div class="highlight-item">
               <span class="mono accent">›</span> On-time delivery, 72%+ overall project score
             </div>
             <div class="highlight-item">
-              <span class="mono accent">›</span> Containerized deployment with Docker & Kubernetes
+              <span class="mono accent">›</span> Containerized deployment with Docker &amp; Kubernetes
             </div>
           </div>
           <div class="project-stack">
@@ -341,9 +369,6 @@
             <span class="stack-tag">Docker</span>
             <span class="stack-tag">MySQL</span>
           </div>
-          <div>
-            <img src="assets/medihub1.png" alt="Ceylon MediHub screenshot" />
-          </div>  
           <div class="project-links">
             <a href="https://github.com/SanukHansana/DSY3S1TelemedicinePlatformProject/graphs/contributors?from=3%2F21%2F2026" class="project-link mono" target="_blank" rel="noopener">⟶ GitHub</a>
           </div>
@@ -498,6 +523,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- ─── LIGHTBOX ──────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="MediHub screenshot" id="lightboxImg" />
+    </div>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">›</button>
+    <div class="lightbox-dots" id="lightboxDots"></div>
+  </div>
 
   <script src="main.js"></script>
 </body>
